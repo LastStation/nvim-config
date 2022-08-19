@@ -1,0 +1,65 @@
+local Plug = require 'user.vimplug'
+
+Plug.begin('~/.config/nvim/plugged')
+
+Plug 'preservim/nerdtree'
+
+-- Plug 'artanikin/vim-synthwave84'
+
+Plug 'haishanh/night-owl.vim'
+
+Plug 'fatih/vim-go'
+
+Plug 'nvim-treesitter/nvim-treesitter'
+
+-- Plug('neoclide/coc.nvim', {branch = 'release'})
+
+Plug 'nvim-lualine/lualine.nvim'
+
+Plug 'onsails/lspkind-nvim'
+
+Plug 'hrsh7th/cmp-nvim-lsp'
+
+Plug 'L3MON4D3/LuaSnip'
+
+Plug 'hrsh7th/cmp-buffer'
+
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'neovim/nvim-lspconfig'
+
+Plug 'jose-elias-alvarez/null-ls.nvim'
+
+Plug 'MunifTanjim/prettier.nvim'
+
+Plug 'williamboman/mason.nvim'
+
+Plug 'williamboman/mason-lspconfig.nvim'
+
+Plug 'glepnir/lspsaga.nvim'
+
+Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'nvim-telescope/telescope-file-browser.nvim'
+
+-- Required for telescope
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'BurntSushi/ripgrep'
+--
+
+Plug 'windwp/nvim-autopairs'
+
+Plug 'windwp/nvim-ts-autotag'
+
+Plug 'norcalli/nvim-colorizer.lua'
+
+Plug 'windwp/nvim-autopairs'
+
+Plug 'lewis6991/gitsigns.nvim'
+
+Plug 'dinhhuy258/git.nvim'
+
+Plug.ends()

@@ -1,0 +1,113 @@
+set termguicolors
+
+filetype on
+
+filetype plugin on
+
+filetype indent on
+
+syntax on
+
+set number
+
+set tabstop=4
+
+set shiftwidth=4
+
+set nowrap
+
+set incsearch
+
+set ignorecase
+
+set smartcase
+
+set showmode
+
+set showmatch
+
+set hlsearch
+
+set wildmenu
+
+set wildmode=list:longest
+
+set modifiable
+
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+set updatetime=300
+
+set nobackup
+
+set nowritebackup
+
+
+" MAPPINGS ---
+
+let mapleader = '\'
+
+nnoremap o o<esc>
+nnoremap O O<esc>
+
+nnoremap Y y$
+
+nnoremap <leader>\ ``
+
+nnoremap <silent> <leader>p :%w !lp<CR>
+
+inoremap jj <Esc>
+
+nnoremap <space> :
+
+nnoremap <F3> :NERDTreeToggle<cr>
+
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+
+let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$']
+
+" disable all linters as that is taken care of by coc.nvim
+let g:go_diagnostics_enabled = 0
+let g:go_metalinter_enabled = []
+
+" don't jump to errors after metalinter is invoked
+let g:go_jump_to_error = 0
+
+" run go imports on file save
+let g:go_fmt_command = "goimports"
+
+" automatically highlight variable your cursor is on
+let g:go_auto_sameids = 0
+
+" syntax highlighting
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
+
+" PLUGINS ---
+
+call plug#begin()
+
+Plug 'preservim/nerdtree'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'artanikin/vim-synthwave84'
+
+" Plug 'bignimbus/pop-punk.vim'
+
+call plug#end()
+
+colorscheme synthwave84
+
