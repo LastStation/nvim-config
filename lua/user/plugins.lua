@@ -12,6 +12,8 @@ Plug 'fatih/vim-go'
 
 Plug 'nvim-treesitter/nvim-treesitter'
 
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 -- Plug('neoclide/coc.nvim', {branch = 'release'})
 
 Plug 'nvim-lualine/lualine.nvim'
