@@ -25,7 +25,8 @@ require('onedark').setup {
     TSComment = { fg = 'cyan' },
     TSBoolean = { fg = '#cba6f7' },
     TSVariable = { fg = '#fab387' },
-    TSProperty = { fg = '#a4b9ef' }
+    TSProperty = { fg = '#a4b9ef' },
+    TSNone = { fg = '#ffffff' }
   }
 
 }
