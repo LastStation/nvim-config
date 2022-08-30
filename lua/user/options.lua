@@ -2,7 +2,7 @@ vim.cmd("autocmd!")
 
 vim.opt.backup = false
 vim.opt.clipboard = "unnamedplus"
-vim.opt.cmdheight = 2
+vim.opt.cmdheight = 1
 vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.conceallevel = 0
 vim.opt.fileencoding = "utf8"
@@ -32,7 +32,12 @@ vim.opt.sidescrolloff = 8
 vim.opt.guifont = "monospace:h17"
 vim.opt.shortmess:append "c"
 vim.opt.timeoutlen = 1000
+vim.opt.showcmd = true
+vim.opt.background = 'dark'
 
+-- Undercurl
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 vim.cmd [[
   autocmd BufNewFile,BufRead *.gohtml   set syntax=html

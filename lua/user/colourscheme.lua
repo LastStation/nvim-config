@@ -1,8 +1,32 @@
-local colorscheme = "night-owl"
+require('onedark').setup {
+  style = 'dark',
+  transparent = true,
+  term_colours = true,
+  ending_tildes = false,
+  cmp_itemkind_reverse = false,
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  return
-end
+  code_style = {
+    comments = 'italic',
+    keywords = 'none',
+    functions = 'italic',
+    strings = 'none',
+    variables = 'none'
+  },
 
+  diagnostics = {
+    darker = true,
+    undercurl = true,
+    background = true
+  },
 
+  -- Comment Highlighting
+  highlights = {
+    TSString = { fg = '#00ffaa' },
+    TSComment = { fg = 'cyan' },
+    TSBoolean = { fg = '#cba6f7' },
+    TSVariable = { fg = '#fab387' },
+    TSProperty = { fg = '#a4b9ef' }
+  }
+
+}
+require('onedark').load()
