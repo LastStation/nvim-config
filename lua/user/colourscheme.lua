@@ -22,7 +22,7 @@ require('onedark').setup {
   -- Comment Highlighting
   highlights = {
     TSString = { fg = '#00ffaa' },
-    TSComment = { fg = 'cyan' },
+    TSComment = { fg = '#388bfd' },
     TSBoolean = { fg = '#cba6f7' },
     TSVariable = { fg = '#fab387' },
     TSProperty = { fg = '#a4b9ef' },
