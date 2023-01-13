@@ -31,11 +31,12 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'windwp/nvim-autopairs'
+  use "kyazdani42/nvim-tree.lua"
   use 'windwp/nvim-ts-autotag'
   use 'norcalli/nvim-colorizer.lua'
   use 'akinsho/nvim-bufferline.lua'
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browse
-  use 'navarasu/onedark.nvim' -- colourscheme
+  use { 'dracula/vim', as = 'dracula' } -- colourscheme
   use 'lukas-reineke/indent-blankline.nvim'
 end)

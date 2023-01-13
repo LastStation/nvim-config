@@ -5,18 +5,18 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
-vim.g.mapleader = '\\' 
-vim.g.maplocalleader = '\\'
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- Normal --
 
--- Set Spacebar as :
-keymap("n", "<Space>", ":", opts)
 
 keymap("n", "o", "o<Esc>", opts)
 keymap("n", "O", "O<Esc>", opts)
 
-keymap("n", "<F3>", ":NERDTreeToggle<CR>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>w", ":w<CR>", opts)
+keymap("n", "<leader>q", ":q<CR>", opts)
 
 -- Window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
