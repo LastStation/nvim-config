@@ -5,11 +5,10 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Normal --
-
 
 keymap("n", "o", "o<Esc>", opts)
 keymap("n", "O", "O<Esc>", opts)
